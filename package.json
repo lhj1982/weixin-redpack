@@ -1,5 +1,5 @@
 {
-  "name": "weixin-redpack",
+  "name": "@lhj1982/weixin-redpack",
   "version": "1.1.1",
   "description": "send redpack by enterprise",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:tvrcgo/weixin-redpack.git"
+    "url": "git+ssh://git@github.com/lhj1982/weixin-redpack.git"
   },
   "keywords": [
     "weixin",
@@ -22,6 +22,10 @@
     "redpack",
     "payment"
   ],
-  "author": "tvrcgo",
-  "license": "MIT"
+  "author": "James Huajun Li <lhj1982@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lhj1982/weixin-redpack/issues"
+  },
+  "homepage": "https://github.com/lhj1982/weixin-redpack#readme"
 }
