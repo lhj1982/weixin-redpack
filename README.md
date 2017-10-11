@@ -3,7 +3,7 @@
 
 ### Installation
 ```
-npm install weixin-redpack
+npm install @lhj1982/weixin-redpack
 ```
 
 ### Usage
