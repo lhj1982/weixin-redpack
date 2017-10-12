@@ -1,6 +1,6 @@
 {
   "name": "@lhj1982/weixin-redpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "send redpack by enterprise",
   "main": "index.js",
   "dependencies": {
@@ -22,7 +22,10 @@
     "redpack",
     "payment"
   ],
-  "author": "James Huajun Li <lhj1982@gmail.com>",
+  "author": [
+    "tvrcgo",
+    "James Huajun Li <lhj1982@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lhj1982/weixin-redpack/issues"

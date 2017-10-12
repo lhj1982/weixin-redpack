@@ -10,13 +10,14 @@ npm install @lhj1982/weixin-redpack
 
 先创建一个红包实例 Redpack，再调用 send() 发送红包，减少每次发红包的参数。
 ```js
-var Redpack = require('weixin-redpack').Redpack;
+var Redpack = require('@lhj1982/weixin-redpack').Redpack;
 
 var redpack = Redpack({
 	mch_id: 'xxx',
 	partner_key: 'xxxxxx',
 	pfx: fs.readFileSync('./wxpay_cert.p12'),
-	wxappid: 'wxxxxxxx'
+	wxappid: 'wxxxxxxx',
+  ca: fs.readFileSync('./ca.pem'),
 });
 
 redpack.send({
@@ -37,7 +38,7 @@ redpack.send({
 
 直接调用 sendRedpack() 输入所有参数。
 ```js
-var wxredpack = require('weixin-redpack');
+var wxredpack = require('@lhj1982/weixin-redpack');
 
 wxredpack.sendRedpack({
   mch_id: 'xxx',
@@ -56,6 +57,22 @@ wxredpack.sendRedpack({
   client_ip: '192.168.1.10',
   act_name: '发红包啦',
   remark: '收好不谢！'
+}, function(err, result){
+  console.log(result);
+});
+```
+
+getRedPackInfo get redpack info
+```js
+var wxredpack = require('@lhj1982/weixin-redpack');
+
+wxredpack.sendRedpack({
+  mch_id: 'xxx',
+  partner_key: 'xxxxxxx',
+  pfx: fs.readFileSync('./application_cert.p12'),
+  wxappid: 'wxxxxxx',
+  mch_billno: 'xxxxxxx',
+  bill_type: 'MCHT',
 }, function(err, result){
   console.log(result);
 });
